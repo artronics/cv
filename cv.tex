@@ -1,4 +1,6 @@
 \documentclass[a4paper,10pt]{article}
+\usepackage[left=0.5in, right=1in]{geometry}
+
 
 %A Few Useful Packages
 \usepackage{marvosym}
@@ -6,7 +8,7 @@
 \usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[big]{layaureo} 				%better formatting of the A4 page
+\usepackage[big,binding=-.5cm]{layaureo} 				%better formatting of the A4 page
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
@@ -40,6 +42,8 @@ ItalicFont = Fontin-Italic.otf
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
+%\titleformat{\section}[display]
+%{\Large\scshape\raggedright}{}{0pt}{}[\titlerule] 
 %Tweak a bit the top margin
 %\addtolength{\voffset}{-1.3cm}
 
@@ -86,9 +90,9 @@ ItalicFont = Fontin-Italic.otf
 %Section: Education
 \section{Education}
 \begin{tabularx}{\textwidth}{p{\textwidth/7}|p{\textwidth*6/7}}
-	\textsc{March} 2016 & \textbf{M.Sc} in \textsc{Telecommunication Engineering}, \textbf{Universiy of Bologna}, Bologna\\
+	\textsc{March} 2016 & \textbf{M.Sc} in \textbf{Telecommunication Engineering}, \textbf{Universiy of Bologna}, Bologna\\
 	& Thesis: ``Software-Defined Wireless Sensor Networks'' \\& \small Advisor: Prof. Chiara \textsc{Burrati} | \normalsize \textsc{Gpa}: 100/110\\\multicolumn{2}{c}{} \\
-	\textsc{Fall} 2010& \textbf{B.Sc} in \textsc{Telecommunication and Electronics Engineering}, \normalsize\textbf{University of Zanjan}, Zanjan\\
+	\textsc{Fall} 2010& \textbf{B.Sc} in \textbf{Telecommunication and Electronics Engineering}, \normalsize\textbf{University of Zanjan}, Zanjan\\
 	& Thesis: ``Controlling Robotic Arm with Human's arm motion''
 \end{tabularx}
 
