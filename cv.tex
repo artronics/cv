@@ -19,6 +19,7 @@
 \usepackage{booktabs}% http://ctan.org/pkg/booktabs
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 
+\usepackage{multirow}
 
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
@@ -67,20 +68,22 @@ ItalicFont = Fontin-Italic.otf
 \font\fb=''[cmr10]'' %for use with \LaTeX command
 
 %--------------------TITLE-------------
-\par{\centering
-		{\Huge Seyed Jalal \textsc{Hosseini}
-	}\bigskip\par}
+%\par{\centering
+		%{\Huge Seyed Jalal \textsc{Hosseini}
+	%}\bigskip\par}
 
 %--------------------SECTIONS-----------------------------------
 %Section: Personal Data
-\section{Personal Data}
+%\section{Personal Data}
 
-\begin{tabular}{rl}
-    \textsc{Place and Date of Birth:} & Tehran, Iran  | 1st March 1987 \\
-    \textsc{Address:}   & Via D'Azeglio 23, 40123, Bologna, Italy \\
-    \textsc{Phone:}     & +39 392 5036611\\
-    \textsc{email:}     & \href{mailto:jalalhosseiny@gmail.com}{jalalhosseiny@gmail.com}\\
-    \textsc{github:}     & \href{https://github.com/artronics}{artronics}
+\begin{tabular}{rll}
+    \multicolumn{2}{l}{\LARGE Seyed Jalal Hosseini} &
+    \multirow{5}{*}{\includegraphics[width=30mm]{img/img02.jpg}}\\[1.3ex]
+    \textsc{Place and Date of Birth:} & Tehran, Iran  | 1st March 1987 &\\
+    \textsc{Address:}   & Via D'Azeglio 23, 40123, Bologna, Italy &\\
+    \textsc{Phone:}     & +39 392 5036611&\\
+    \textsc{email:}     & \href{mailto:jalalhosseiny@gmail.com}{jalalhosseiny@gmail.com}&\\
+    \textsc{github:}     & \href{https://github.com/artronics}{artronics}&
 \end{tabular}
 
 %Summary section. Look for summary dir to import one
