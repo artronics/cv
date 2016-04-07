@@ -16,6 +16,8 @@
 \usepackage{tabularx} 
 \usepackage{ltablex}
 
+\usepackage[none]{hyphenat}
+
 \usepackage{booktabs}% http://ctan.org/pkg/booktabs
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 
@@ -50,7 +52,6 @@ ItalicFont = Fontin-Italic.otf
 
 %Italian hyphenation for the word: ''corporations''
 \hyphenation{im-pre-se}
-\usepackage{hyphenat}
 
 %-------------WATERMARK TEST [**not part of a CV**]---------------
 \usepackage[absolute]{textpos}
@@ -94,7 +95,7 @@ ItalicFont = Fontin-Italic.otf
 \section{Education}
 \begin{tabularx}{\textwidth}{p{\textwidth/7}|p{\textwidth*6/7}}
 	\textsc{March} 2016 & \textbf{M.Sc} in \textbf{Telecommunication Engineering}, \textbf{Universiy of Bologna}, Bologna\\
-    & Thesis: ``\textbf{Software-Defined Wireless Sensor Networks}'' \\& \small Advisor: Prof. Chiara \textsc{Burrati} | \normalsize \textsc{Gpa}: 100/110\\\multicolumn{2}{c}{} \\
+    & Thesis: ``\textbf{Software-Defined Wireless Sensor Networks}'' \\& \small Advisor: Prof. Roberto \textsc{Verdone} | \normalsize \textsc{Gpa}: 100/110\\\multicolumn{2}{c}{} \\
 	\textsc{Fall} 2010& \textbf{B.Sc} in \textbf{Telecommunication and Electronics Engineering}, \normalsize\textbf{University of Zanjan}, Zanjan\\
     & Thesis: ``\textbf{Motion Controlled Robotic Arm}''
 \end{tabularx}
@@ -121,14 +122,15 @@ ItalicFont = Fontin-Italic.otf
 
 
 \section{Projects}
-\input{projects/projects_full.tex}
+\input{projects/t3lab.tex}
 
 %Section: Languages
 \section{Languages}
 \begin{tabular}{rl}
 	\textsc{Farsi (Persian):}&Native\\
-    \textsc{English:}&Fluent, | \small IELTS (2012) Overall:6\normalsize\\
-    \textsc{Italian}& Elementary
+    \textsc{English:}&Fluent\\
+    \textsc{Italian}& Elementary\\
+    \textsc{Arabic}& Intermediate
 \end{tabular}
 
 \section{Interests and Activities}
