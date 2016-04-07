@@ -1,5 +1,6 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[left=0.5in, right=1in]{geometry}
+\usepackage[left=1in, right=.8in,top=1in, bottom=.8in]{geometry}
+
 
 
 %A Few Useful Packages
@@ -8,12 +9,12 @@
 \usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[big,binding=-.5cm]{layaureo} 				%better formatting of the A4 page
+%\usepackage[big,binding=-.5cm]{layaureo} 				%better formatting of the A4 page
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
-\usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
 
 \usepackage{tabularx} 
+\usepackage{tabu}
 \usepackage{ltablex}
 
 \usepackage[none]{hyphenat}
@@ -93,17 +94,17 @@ ItalicFont = Fontin-Italic.otf
 
 %Section: Education
 \section{Education}
-\begin{tabularx}{\textwidth}{p{\textwidth/7}|p{\textwidth*6/7}}
+    \begin{tabu}{X | X[7]}    
 	\textsc{March} 2016 & \textbf{M.Sc} in \textbf{Telecommunication Engineering}, \textbf{Universiy of Bologna}, Bologna\\
     & Thesis: ``\textbf{Software-Defined Wireless Sensor Networks}'' \\& \small Advisor: Prof. Roberto \textsc{Verdone} | \normalsize \textsc{Gpa}: 100/110\\\multicolumn{2}{c}{} \\
 	\textsc{Fall} 2010& \textbf{B.Sc} in \textbf{Telecommunication and Electronics Engineering}, \normalsize\textbf{University of Zanjan}, Zanjan\\
     & Thesis: ``\textbf{Motion Controlled Robotic Arm}''
-\end{tabularx}
+\end{tabu}
 
 %Section: Work Experience at the top
 \section{Work Experience}
 
-\begin{tabularx}{\textwidth}{p{\textwidth/7}|p{\textwidth*6/7}}
+    \begin{tabu}{X | X[7]}    
     \emph{2012} & \textbf{Technical Telecommunication Consultant} at \textbf{IGS}, \textsc{Shahid Rajaee Port Complex} \\
     \textsc{2011}& 
   \small \textbullet~Consulting on supplying equipment and spare parts\normalsize \\&
@@ -115,7 +116,7 @@ ItalicFont = Fontin-Italic.otf
   \small\textbullet~Design, Simulation and Verification of projects\normalsize\\
   \multicolumn{2}{c}{} \\
     
-\end{tabularx}
+\end{tabu}
 
 \section{Technical Skills}
 \input{skills/skills_full.tex}
